@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semicircular Slider with Vanilla JavaScript</title>
+<link rel="stylesheet" href="./dfd.css">
+<style>
+  h1, p {
+    font-family: Lato;
+  }
+
+  .range-input-container {
+    position: relative;
+  }
+ 
+  #rangeInput {
+    display: none;
+  }
+  
+  .value-display {
+    position: absolute;
+    font-size: 16px;
+    color: red;
+  }
+</style>
+</head>
+<body>
+
+<h1>Semicircular Slider with Vanilla JavaScript</h1>
+
+<div class="range-input-container">
+  <input type="range" id="rangeInput" >
+  <div id="valueDisplay" class="value-display">45</div>
+</div>
+
+<div id="root"  style="margin-left: 50px;"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const sliderContainer = document.getElementById("root");
+  const rangeInput = document.getElementById("rangeInput");
+  const valueDisplay = document.getElementById("valueDisplay");
+
+  const updateValueDisplayPosition = function(value) {
+    // Code for updating the value display position
+  };
+
+  const update = function (e) {
+    const value = e.value;
+    valueDisplay.innerText = value;
+    updateValueDisplayPosition(value);
+  };
+
+  const renderSemicircularSlider = function() {
+    $(sliderContainer).roundSlider({
+      radius: 150,
+      width: 10,
+      handleSize: "+30",
+      startAngle: 0,
+      endAngle: 380,
+      sliderType: "min-range",
+      svgMode: true,
+      change: update,
+      drag: update,
+      circleShape: "half-top",
+      pathColor: "pink"
+    });
+
+    const sliderElement = $(sliderContainer).find(".rs-container")[0];
+    const sliderTrackElement = sliderElement.querySelector(".rs-bg-color");
+    sliderTrackElement.style.backgroundColor = "pink";
+
+    // Set height of rs-move elements
+    var rsmove = document.getElementsByClassName("rs-move");
+    for (var i = 0; i < rsmove.length; i++) {
+      rsmove[i].style.height = "40px";
+    }
+  };
+
+  renderSemicircularSlider();
+});
+
+</script>
+
+<script src="./jquery-3.6.0.min.js"></script>
+<script src="./roundslider.min.js"></script>
+
+</body>
+</html>
