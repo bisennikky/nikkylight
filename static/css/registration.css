@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #0A070E;
+    font-family: Arial, sans-serif;
+
+}
+
+/* .evoluzn_logo {
+    width: 140px;
+    padding-left: 5vw;
+    padding-top: 1vw;
+    
+} */
+.evoluzn_logo {
+    width: 140px;
+    padding-left: 5vw;
+    padding-top: 15px;
+
+}
+
+.registration_main {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 5vh;
+}
+
+.registration_container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    background-color: #1A1A1A;
+    margin-top: 5vh;
+}
+
+.registration_title {
+    color: #3386FF;
+}
+
+.registration_email_phone_section {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.registration_password_conform_password_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.registration_full_name {
+    color: #3386FF;
+    margin-top: 6vh;
+}
+
+.registration_full_name_input {
+    width: 99%;
+    height: 40px;
+    font-size: larger;
+    border-radius: 25px;
+    background-color: #1A1A1A;
+    border-color: #ffffff;
+    color: #fff;
+    text-indent: 10px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.registration_email {
+    color: #3386FF;
+}
+
+.registration_email_input {
+    width: 99%;
+    height: 40px;
+    font-size: larger;
+    border-radius: 25px;
+    background-color: #1A1A1A;
+    border-color: #ffffff;
+    color: #fff;
+    text-indent: 10px;
+    margin-top: 1vh;
+}
+
+.registration_phone_number {
+    color: #3386FF;
+}
+
+.registration_phone_number_input {
+    width: 99%;
+    height: 40px;
+    font-size: larger;
+    border-radius: 25px;
+    background-color: #1A1A1A;
+    border-color: #ffffff;
+    color: #fff;
+    text-indent: 10px;
+    margin-top: 1vh;
+}
+
+.registration_password {
+    color: #3386FF;
+    margin-top: 1vh;
+}
+
+.registration_password_input {
+    width: 99%;
+    height: 40px;
+    font-size: larger;
+    border-radius: 25px;
+    background-color: #1A1A1A;
+    border-color: #ffffff;
+    color: #fff;
+    text-indent: 10px;
+    margin-top: 1vh;
+}
+
+.registration_conform_password {
+    color: #3386FF;
+    margin-top: 1vh;
+}
+
+.registration_conform_password_input {
+    width: 99%;
+    height: 40px;
+    font-size: larger;
+    border-radius: 25px;
+    background-color: #1A1A1A;
+    border-color: #ffffff;
+    color: #fff;
+    text-indent: 10px;
+    margin-top: 1vh;
+
+}
+
+.registration_button_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+}
+
+.registration_button {
+    color: white;
+    background-color: #3386FF;
+    border-radius: 25px;
+    width: 120px;
+    border-color: white;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.registration_login_span {
+    color: #3386FF;
+    text-decoration: underline;
+}
+
+.registration_already_have_an_account {
+    color: white;
+    text-align: center;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+
+.footer {
+    background-color: #3F3F3F;
+    color: #fff;
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    justify-content: end;
+    /* Push the footer to the bottom */
+    /* padding-right: 20px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer2 {
+    margin-right: 20px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .registration_email_phone_section {
+        flex-direction: column;
+    }
+
+    .registration_password_conform_password_section {
+        flex-direction: column;
+
+    }
+
+    .registration_phone_number {
+        margin-top: 1vh;
+    }
+
+    .registration_password {
+        margin-top: 1vh;
+
+    }
+
+    .registration_conform_password {
+        margin-top: 1vh;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .sssss {
+        padding-left: 20px;
+    }
+}

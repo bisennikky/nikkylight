@@ -1,0 +1,120 @@
+
+
+.engineering_main_container{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 5vh;
+}
+.engineering_container{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    background-color: #1A1A1A;
+}
+.engineering_screen_email {
+    width: 99%;
+    height: 40px;
+    font-size: larger;
+    border-radius: 10px;
+    background-color: #3F3F3F;
+    border-color: #ffffff;
+    color: #fff;
+    text-indent: 10px; 
+
+    background-image: url('../img/mingcute_checkbox-fill.png'); /* URL to your icon image */
+    background-repeat: no-repeat;
+    /* background-position: calc(100% - 10px) right ;  */
+    background-size:20px;
+    background-position: right 10px center;
+}
+
+.engineering_screen_email:focus {
+    border-color: #fff;
+    outline: none;
+}
+
+.engineering_conform_button_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.engineering_conform_button_conform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #3386FF;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    border-color: #fff;
+    cursor: pointer;
+}
+
+.engineering_state_city{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.engineering_state_row_col{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+
+
+.engineering_pincode {
+    width: 99%;
+    height: 40px;
+    font-size: larger;
+    border-radius: 10px;
+    background-color: #3F3F3F;
+    border-color: #ffffff;
+    color: #fff;
+    text-indent: 10px; 
+
+    background-image: url('../img/mingcute_checkbox-fill.png'); /* URL to your icon image */
+    background-repeat: no-repeat;
+    /* background-position: calc(100% - 10px) right ;  */
+    background-size:20px;
+    background-position: right 10px center;
+    margin-right: 10px;
+}
+.engineering_pincode:focus {
+    border-color: #fff;
+    outline: none;
+}
+
+.engineering_country {
+    width: 99%;
+    height: 40px;
+    font-size: larger;
+    border-radius: 10px;
+    background-color: #3F3F3F;
+    border-color: #ffffff;
+    color: #fff;
+    text-indent: 10px; 
+
+    background-image: url('../img/mingcute_checkbox-fill.png'); /* URL to your icon image */
+    background-repeat: no-repeat;
+    /* background-position: calc(100% - 10px) right ;  */
+    background-size:20px;
+    background-position: right 10px center;
+}
+.engineering_country:focus {
+    border-color: #fff;
+    outline: none;
+}
+@media screen and (max-width: 452px) {
+    /* CSS rules to be applied when the screen width is 600px or less */
+    .remember_me_forgotpassword {
+      font-size: small;
+    }
+  }
+  

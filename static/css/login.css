@@ -7,7 +7,11 @@ body {
     min-height: 100vh;
     background-color: #0A070E;
 }
-
+.login_main_container{
+    margin-top: 5vh; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .welcome_back {
     color: #3386FF;
 }
@@ -16,7 +20,18 @@ body {
     color: #ffffff;
 
 }
-
+ /* Additional styles for Microsoft Edge */
+ @supports (-ms-ime-align: auto) {
+    /* Hide the default Edge checkbox */
+    .checkbox_::-ms-check {
+        display: none;
+    }
+    
+    /* Style the custom checkbox for Edge */
+    .checkbox_::-ms-check + .checkmark {
+        border: 1px solid #3386FF;
+    }
+}
 .footer {
     background-color: #3F3F3F;
     color: #fff;
@@ -29,9 +44,13 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.footer2 {
+    margin-right: 20px;
+
+}
 
 
-.container {
+.login_container {
     max-width: 700px;
     margin: 0 auto;
     padding: 20px;
@@ -40,14 +59,14 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 20px;
-    background-color: #3F3F3F;
+    background-color: #1A1A1A;
 
 }
 
 .evoluzn_logo {
     width: 140px;
     padding-left: 5vw;
-    padding-top: 1vw;
+    padding-top: 15px;
 }
 
 .email_login {
@@ -55,12 +74,10 @@ body {
     height: 40px;
     font-size: larger;
     border-radius: 10px;
-    background-color: #3F3F3F;
+    background-color: #1A1A1A;
     border-color: #ffffff;
     color: #fff;
     text-indent: 10px; 
-
-
 
     background-image: url('../img/mingcute_checkbox-fill.png'); /* URL to your icon image */
     background-repeat: no-repeat;
@@ -68,12 +85,16 @@ body {
     background-size:20px;
     background-position: right 10px center;
 }
+.email_login:focus {
+    border-color: #fff;
+    outline: none;
+}
 
 .password_login {
     width: 99%;
     height: 40px;
     border-radius: 10px;
-    background-color: #3F3F3F;
+    background-color: #1A1A1A;
     border-color: #ffffff;
     color: #fff;
     text-indent: 10px; 
@@ -126,7 +147,7 @@ body {
     color: #fff;
     background-color: #3386FF;
     height: 40px;
-    width: 100px;
+    width: 120px;
     border-radius: 20px;
     border-color: #fff;
     cursor: pointer;
@@ -137,15 +158,16 @@ body {
     justify-content: center;
     align-items: center;
     border: none;
-    margin-top: 2vh;
+    margin-top: 3vh;
 }
 
-.footer2 {
-    margin-right: 20px;
 
-}
 
-.email_login:focus {
-    border-color: #fff;
-    outline: none;
-}
+
+@media screen and (max-width: 348px) {
+    /* CSS rules to be applied when the screen width is 600px or less */
+    .remember_me_forgotpassword {
+      font-size: small;
+    }
+  }
+  

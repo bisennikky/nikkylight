@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #0A070E;
+    font-family: Arial, sans-serif;
+}
+
+.evoluzn_logo {
+    /* width: 140px; */
+    padding-left: 5vw;
+    padding-top: 15px;
+    max-width: 140px;
+}
+
+.conform_otp_container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    background-color: #1A1A1A;
+}
+
+.conform_otp_conform_otp {
+    color: #3386FF;
+    text-align: center;
+}
+
+.conform_otp_enter_otp {
+
+    color: rgb(255, 255, 255);
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.conform_otp_verifyotp_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+.conform_otp_container_main {
+    margin-top: 5vh;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.conform_otp_verify_otp {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #3386FF;
+    border-color: white;
+    color: white;
+}
+
+.footer {
+    background-color: #3F3F3F;
+    color: #fff;
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    justify-content: end;
+    /* Push the footer to the bottom */
+    /* padding-right: 20px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer2 {
+    margin-right: 20px;
+
+}
