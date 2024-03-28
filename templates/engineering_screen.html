@@ -5,59 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="../static/css/engineering_screen.css">
+
 </head>
-<link href="../static/css/engineering_screen.css" rel="stylesheet">
-<link href="../static/css/bootstrap.min.css" rel="stylesheet">
 
-<body style="background-color: black;">
+<body>
+    <div>
+        <img class="evoluzn_logo" src="../static/img/evoluzn_logo.png">
 
-    <img class="evoluzn_logo" src="../static/img/evoluzn_logo.png">
+        <div class="engineering_screen_main">
+            <div class="engineering_screen_container">
+                <div class="engineering_screen_title">Details</div>
 
-    <div class="engineering_main_container">
-        <div class="engineering_container">
-            <h2>Details</h2>
-            <div>
-                Address
+                <form>
+                    <div class="engineering_screen_form_section">
+                        <div class="engineering_screen_full_name">Address</div>
+                        <input class="engineering_screen_full_name_input" type="text">
+
+                        <div class="engineering_screen_email_phone_section ">
+                            <div class="email_section_div">
+                                <div class="engineering_screen_email">Pin Code</div>
+                                <input class="engineering_screen_email_input" type="number">
+                            </div>
+                            <div class="phone_section_div">
+                                <div class="engineering_screen_phone_number">Country</div>
+                                <input class="engineering_screen_phone_number_input" type="text">
+                            </div>
+                        </div>
+
+
+                        <div class="engineering_screen_password_conform_password_section row">
+                            <div class="password_section_div">
+                                <div class="engineering_screen_password">State</div>
+                                <input class="engineering_screen_password_input" type="text">
+                            </div>
+                            <div class="conform_password_section_div">
+                                <div class="engineering_screen_conform_password">City</div>
+                                <input class="engineering_screen_conform_password_input" type="text">
+                            </div>
+                        </div>
+
+                        <div class="engineering_screen_conform_password">Rows & Colums (X x Y)</div>
+                        <input class="engineering_screen_conform_password_input" type="number">
+
+                    </div>
+
+                    <div class="engineering_screen_button_div">
+                        <button class="engineering_screen_button" type="submit">Register</button>
+                    </div>
+                
+
+                </form>
+
             </div>
-            <input class="engineering_screen_email" type="email">
 
-            <div class="engineering_pincode_country col">
-                <div class="row">
-                        <div>Pin Code</div>
-                        <input class="engineering_pincode" >
-                </div>
-                <div class="row">
-                        <div>Country</div>
-                        <input class="engineering_country" >
-                </div>
-            </div>
-
-            <div class="engineering_state_city">
-                <div class="">
-                        <div>State</div>
-                        <input class="" >
-                </div>
-                <div class="">
-                        <div>City</div>
-                        <input class="" >
-                </div>
-            </div>
-            <div class="engineering_state_row_col">
-                <div class="">
-                        <div>State</div>
-                        <input class="" >
-                </div>
-                <div class="">
-                        <div>Rows & Colums (X x Y)</div>
-                        <input class="" >
-                </div>
-            </div>
-           <div class="engineering_conform_button_div">
-            <button class="engineering_conform_button_conform">
-                Confirm
-            </button>
-           </div>
         </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer2">Powered by Evoluzn</div>
     </div>
 </body>
 

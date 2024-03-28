@@ -9,10 +9,10 @@ body {
 }
 
 .evoluzn_logo {
-    /* width: 140px; */
+    width: 140px;
     padding-left: 5vw;
     padding-top: 15px;
-    max-width: 140px;
+    /* max-width: 140px; */
 }
 
 .conform_otp_container {
@@ -73,8 +73,8 @@ body {
     justify-content: end;
     /* Push the footer to the bottom */
     /* padding-right: 20px; */
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .footer2 {

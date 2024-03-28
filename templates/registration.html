@@ -7,6 +7,8 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="../static/css/registration.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 
@@ -16,7 +18,7 @@
 
         <div class="registration_main">
             <div class="registration_container">
-                <h2 class="registration_title">Registration</h2>
+                <div class="registration_title">Registration</div>
 
                 <form>
                     <div class="registration_form_section">
@@ -24,11 +26,11 @@
                         <input class="registration_full_name_input" type="text">
 
                         <div class="registration_email_phone_section ">
-                            <div class="sssss" style="width: 100%; padding-right: 20px ;">
+                            <div class="email_section_div">
                                 <div class="registration_email">Email</div>
                                 <input class="registration_email_input" type="text">
                             </div>
-                            <div class="" style="width: 100%;">
+                            <div class="phone_section_div">
                                 <div class="registration_phone_number">Phone Number</div>
                                 <input class="registration_phone_number_input" type="number">
                             </div>
@@ -36,15 +38,24 @@
 
 
                         <div class="registration_password_conform_password_section row">
-                            <div class="sssss" style="width: 100%; padding-right: 20px ;">
+                            <div class="password_section_div">
                                 <div class="registration_password">Password</div>
-                                <input class="registration_password_input" type="password">
+                                <div style="position: relative;">
+                                    <input class="registration_password_input" type="password " id="password_field1">
+                                    <i class="far fa-eye-slash show-password1" id="show-password1"></i>
+                                </div>
+
                             </div>
-                            <div class="" style="width: 100%;">
+                            <div class="conform_password_section_div">
                                 <div class="registration_conform_password">Confirm Password</div>
-                                <input class="registration_conform_password_input" type="password">
+                                <div style="position: relative;">
+                                    <input class="registration_conform_password_input" type="password"
+                                        id="password_field2">
+                                    <i class="far fa-eye-slash show-password2" id="show-password2"></i>
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
                     <div class="registration_button_div">
@@ -64,6 +75,11 @@
     <div class="footer">
         <div class="footer2">Powered by Evoluzn</div>
     </div>
+
+
+    <script src="../static/js/registration.js">
+      
+    </script>
 </body>
 
 </html>

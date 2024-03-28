@@ -43,6 +43,9 @@ body {
 
 .registration_title {
     color: #3386FF;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 3vh;
 }
 
 .registration_email_phone_section {
@@ -60,7 +63,7 @@ body {
 
 .registration_full_name {
     color: #3386FF;
-    margin-top: 6vh;
+    margin-top: 2vh;
 }
 
 .registration_full_name_input {
@@ -172,8 +175,48 @@ body {
     margin-top: 2vh;
     cursor: pointer;
 }
+.email_section_div{
+    width: 100%; padding-right: 20px ;
+}
+.phone_section_div{
+    width: 100%;
+}
+.password_section_div{
+    width: 100%; padding-right: 20px ;
+
+}
+.conform_password_section_div{
+    width: 100%;
+
+}
+.show-password1 {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    margin-top: 4px;
+}
+.show-password2 {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    margin-top: 4px;
+}
+.fa-eye-slash {
+    color: #3386FF;
+}
+
+.fa-eye {
+    color: #3386FF;
+}
 
 
+input::-ms-reveal {
+    display: none;
+}
 .footer {
     background-color: #3F3F3F;
     color: #fff;
@@ -183,8 +226,8 @@ body {
     justify-content: end;
     /* Push the footer to the bottom */
     /* padding-right: 20px; */
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .footer2 {
@@ -218,7 +261,10 @@ body {
 
 
 @media screen and (max-width: 600px) {
-    .sssss {
+    .email_section_div {
+        padding-left: 20px;
+    }
+    .password_section_div{
         padding-left: 20px;
     }
 }

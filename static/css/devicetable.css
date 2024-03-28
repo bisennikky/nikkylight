@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -22,13 +23,13 @@ body {
 
 }
 
-.engineering_screen_main {
+.devicetable_main {
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 5vh;
 }
 
-.engineering_screen_container {
+.devicetable_container {
     max-width: 700px;
     margin: 0 auto;
     padding: 20px;
@@ -42,32 +43,34 @@ body {
     margin-bottom: 5vh;
 }
 
-.engineering_screen_title {
+.devicetable_title {
     color: #3386FF;
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 3vh;
 }
 
-.engineering_screen_email_phone_section {
+.devicetable_email_phone_section {
     display: flex;
     align-items: center;
     flex-direction: row;
 
 }
-
-.engineering_screen_password_conform_password_section {
+.devicetable_form_section{
+    margin-top: 2vh;
+}
+.devicetable_password_conform_password_section {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.engineering_screen_full_name {
+.devicetable_full_name {
     color: #3386FF;
-    margin-top: 2vh;
+    margin-top: 6vh;
 }
 
-.engineering_screen_full_name_input {
+.devicetable_full_name_input {
     width: 99%;
     height: 40px;
     font-size: larger;
@@ -80,11 +83,11 @@ body {
     margin-bottom: 1vh;
 }
 
-.engineering_screen_email {
+.devicetable_email {
     color: #3386FF;
 }
 
-.engineering_screen_email_input {
+.devicetable_email_input {
     width: 99%;
     height: 40px;
     font-size: larger;
@@ -96,11 +99,11 @@ body {
     margin-top: 1vh;
 }
 
-.engineering_screen_phone_number {
+.devicetable_phone_number {
     color: #3386FF;
 }
 
-.engineering_screen_phone_number_input {
+.devicetable_phone_number_input {
     width: 99%;
     height: 40px;
     font-size: larger;
@@ -112,12 +115,12 @@ body {
     margin-top: 1vh;
 }
 
-.engineering_screen_password {
+.devicetable_password {
     color: #3386FF;
     margin-top: 1vh;
 }
 
-.engineering_screen_password_input {
+.devicetable_password_input {
     width: 99%;
     height: 40px;
     font-size: larger;
@@ -129,12 +132,12 @@ body {
     margin-top: 1vh;
 }
 
-.engineering_screen_conform_password {
+.devicetable_conform_password {
     color: #3386FF;
     margin-top: 1vh;
 }
 
-.engineering_screen_conform_password_input {
+.devicetable_conform_password_input {
     width: 99%;
     height: 40px;
     font-size: larger;
@@ -147,14 +150,14 @@ body {
 
 }
 
-.engineering_screen_button_div {
+.devicetable_button_div {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 4vh;
 }
 
-.engineering_screen_button {
+.devicetable_button {
     color: white;
     background-color: #3386FF;
     border-radius: 25px;
@@ -165,12 +168,12 @@ body {
     cursor: pointer;
 }
 
-.engineering_screen_login_span {
+.devicetable_login_span {
     color: #3386FF;
     text-decoration: underline;
 }
 
-.engineering_screen_already_have_an_account {
+.devicetable_already_have_an_account {
     color: white;
     text-align: center;
     margin-top: 2vh;
@@ -209,25 +212,25 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .engineering_screen_email_phone_section {
+    .devicetable_email_phone_section {
         flex-direction: column;
     }
 
-    .engineering_screen_password_conform_password_section {
+    .devicetable_password_conform_password_section {
         flex-direction: column;
 
     }
 
-    .engineering_screen_phone_number {
+    .devicetable_phone_number {
         margin-top: 1vh;
     }
 
-    .engineering_screen_password {
+    .devicetable_password {
         margin-top: 1vh;
 
     }
 
-    .engineering_screen_conform_password {
+    .devicetable_conform_password {
         margin-top: 1vh;
     }
 }

@@ -14,6 +14,9 @@ body {
 }
 .welcome_back {
     color: #3386FF;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 3vh;
 }
 
 .pls_log_in {
@@ -41,8 +44,8 @@ body {
     justify-content: end;
     /* Push the footer to the bottom */
     /* padding-right: 20px; */
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .footer2 {
     margin-right: 20px;
@@ -73,7 +76,7 @@ body {
     width: 99%;
     height: 40px;
     font-size: larger;
-    border-radius: 10px;
+    border-radius: 25px;
     background-color: #1A1A1A;
     border-color: #ffffff;
     color: #fff;
@@ -93,11 +96,12 @@ body {
 .password_login {
     width: 99%;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 25px;
     background-color: #1A1A1A;
     border-color: #ffffff;
     color: #fff;
     text-indent: 10px; 
+    font-size: larger;
 
 }
 
@@ -127,7 +131,7 @@ body {
 }
 
 .remember_me {
-    color: #fff;
+    color: #3386FF;
     cursor: pointer;
 }
 
@@ -162,6 +166,57 @@ body {
 }
 
 
+.show-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.fa-eye-slash {
+    color: #3386FF;
+}
+
+.fa-eye {
+    color: #3386FF;
+}
+/* Hide the default checkbox */
+.checkbox_login {
+appearance: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+width: 18px;
+height: 18px;
+border: 2px solid #3386FF;
+border-radius: 4px;
+outline: none;
+cursor: pointer;
+vertical-align: middle;
+position: relative;
+}
+
+/* Checked state */
+.checkbox_login:checked {
+background-color: #3386FF; /* Change the background color when checked */
+}
+
+/* Custom checkmark */
+.checkbox_login::after {
+content: '\2714'; /* Unicode character for checkmark */
+font-size: 14px; /* Adjust size as needed */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white; /* Checkmark color */
+display: none; /* Hide by default */
+}
+
+/* Show custom checkmark when checkbox is checked */
+.checkbox_login:checked::after {
+display: block;
+}
 
 
 @media screen and (max-width: 348px) {

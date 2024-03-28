@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../static/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- <link rel="stylesheet" href="./all.min.css"> -->
+
+    <style>
+     
+        .show-password {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .fa-eye-slash {
+            color: #3386FF;
+        }
+
+        .fa-eye {
+            color: #3386FF;
+        }
+
+
+        
+ /* Hide the default checkbox */
+ .checkbox_login {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #3386FF;
+        border-radius: 4px;
+        outline: none;
+        cursor: pointer;
+        vertical-align: middle;
+        position: relative;
+    }
+
+    /* Checked state */
+    .checkbox_login:checked {
+        background-color: #3386FF; /* Change the background color when checked */
+    }
+
+    /* Custom checkmark */
+    .checkbox_login::after {
+        content: '\2714'; /* Unicode character for checkmark */
+        font-size: 14px; /* Adjust size as needed */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white; /* Checkmark color */
+        display: none; /* Hide by default */
+    }
+
+    /* Show custom checkmark when checkbox is checked */
+    .checkbox_login:checked::after {
+        display: block;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img class="evoluzn_logo" src="../static/img/evoluzn_logo.png">
+        <div class="login_main_container">
+            <div class="login_container">
+                <h2 class="welcome_back">WELCOME BACK</h2>
+                <h4 class="pls_log_in">Please log in to your account</h4>
+
+                <form>
+                    <div class="email_address_title">Email Address</div>
+                    <input class="email_login" type="email">
+                    <div class="password_title">Password</div>
+                    <div class="" style="position: relative;">
+                        <input type="password" class="password_login" id="password_field">
+                        <i class="far fa-eye-slash show-password" id="show-password"></i>
+                    </div>
+
+                    <div class="remember_me_forgotpassword">
+                        <label class="remember_me">Remember me
+                            <input class="checkbox_login" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <div class="Forgot_password">Forgot Password?</div>
+                    </div>
+
+                    <div class="login_button_div">
+                        <button class="login_button">Log in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer2">Powered by Evoluzn</div>
+    </div>
+
+
+
+    <script>
+        const passwordField = document.getElementById("password_field");
+        const showPasswordIcon = document.getElementById("show-password");
+
+        showPasswordIcon.addEventListener("click", function () {
+            const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
+            passwordField.setAttribute("type", type);
+
+            // Toggle eye icon
+            this.classList.toggle("fa-eye-slash");
+            this.classList.toggle("fa-eye");
+        });
+    </script>
+</body>
+
+</html>
