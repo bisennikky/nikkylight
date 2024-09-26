@@ -1,0 +1,67 @@
+
+.logout_container {
+    background-color: #1A1A1A;
+    border-color: #ffffff;
+    border-radius: 15px;
+    font-family: Arial, sans-serif;
+
+}
+
+.logout_logout_conformation {
+    background-color: 3F3F3F;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.logout_conformation_title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #3386FF;
+}
+
+.logout_close {
+    display: flex;
+    justify-content: center;
+   
+}
+.logout_close_button{
+    color: #ffffff;
+}
+.logout_are_you_sure_to_want_to_logout {
+    display: flex;
+    justify-content: center;
+    border-color: #3386FF;
+    color: #ffffff;
+}
+
+.logout_logout_text {
+    color: #3386FF;
+}
+
+.logout_question_mark {
+    color: #ffffff;
+}
+
+.logout_navigation_button {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.logout_cancel {
+    color: white;
+    background-color: #3F3F3F;
+    border-radius: 15px;
+    width: 120px;
+    border-color: white;
+}
+
+.logout_logout_button {
+    color: white;
+    background-color: #3386FF;
+    border-radius: 15px;
+    width: 120px;
+    border-color: white;
+}
